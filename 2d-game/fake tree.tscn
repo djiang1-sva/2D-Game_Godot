@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://deb75i55sp27v"]
+
+[ext_resource type="Texture2D" uid="uid://bpvi3lfu530w" path="res://icon.svg" id="1_wsuhd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="fake tree" type="Sprite2D" parent="."]
+position = Vector2(83.00001, 149)
+scale = Vector2(0.234375, 0.703125)
+texture = ExtResource("1_wsuhd")
+
+[node name="Icon2" type="Sprite2D" parent="fake tree"]
+position = Vector2(4.2666626, -98.13333)
+scale = Vector2(4.700001, 0.54444444)
+texture = ExtResource("1_wsuhd")
+
+[node name="Icon" type="Sprite2D" parent="fake tree"]
+position = Vector2(4.2666626, -162.13333)
+scale = Vector2(4.266667, 0.36666667)
+texture = ExtResource("1_wsuhd")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwltbp4h1nldg"]
+
+[ext_resource type="Texture2D" uid="uid://bpvi3lfu530w" path="res://icon.svg" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://day81mmki0epf" path="res://robot.gd" id="2_epypp"]
+[ext_resource type="Script" uid="uid://dt2voqqppxqbg" path="res://rival.gd" id="3_0hol4"]
+[ext_resource type="PackedScene" uid="uid://deb75i55sp27v" path="res://fake tree.tscn" id="3_epypp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Robot2" type="Sprite2D" parent="."]
+position = Vector2(70, 200)
+texture = ExtResource("1_0e48y")
+script = ExtResource("2_epypp")
+
+[node name="Robot" type="Sprite2D" parent="."]
+position = Vector2(70, 68)
+texture = ExtResource("1_0e48y")
+script = ExtResource("3_0hol4")
+
+[node name="Node2D" parent="." instance=ExtResource("3_epypp")]
+position = Vector2(749, 185)
+
+[node name="Node2D2" parent="." instance=ExtResource("3_epypp")]
+position = Vector2(977, 42)
